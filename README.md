@@ -1,7 +1,7 @@
 # Projekt Portfolio
 ## O projekcie
 Omawiane repozytorium zawiera kod źródłowy wykonanego portfolio.
-Efekt końcowy można zobaczyć pod adresem: (https://www.portfolioxyz.pl "Link do Portfolio")
+Efekt końcowy można zobaczyć pod adresem: [Link do Portfolio](https://www.portfolioxyz.pl)
 ## Wykorzystywane technologie
 - HTML5
 - CCS3
