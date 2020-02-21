@@ -2,13 +2,17 @@
 
 <head>
     <meta description="Wykonał Mikołaj Frohmberg. Strona prezentująca umiejętności
-związane z kodowaniem w webowych językach programowania.">
+    związane z kodowaniem w webowych językach programowania.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - Mikołaj Frohmberg</title>
+    
     <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="libraries/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="libraries/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="libraries/slick-1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="libraries/slick-1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -20,7 +24,9 @@ związane z kodowaniem w webowych językach programowania.">
     <div id="title-banner">
         <h1>PORTFOLIO - MIKOŁAJ FROHMBERG</h1>
     </div>
+    <div id="main-article">
     <article>
+        <li class="article-point"><span>O mnie</span></li>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi. Nostrum quod vel deleniti! Odio provident
         dolores quibusdam quis, iste qui incidunt tempora voluptatem. Debitis vitae accusantium laborum praesentium. Vel
         qui soluta quia iure eaque dolore aliquam est minima ducimus unde rerum aut nemo, doloremque cum. Vel ipsa cum
@@ -35,8 +41,40 @@ związane z kodowaniem w webowych językach programowania.">
         minima aliquam dolorum illum, saepe deserunt vero? Reiciendis quisquam recusandae omnis tempore magni eveniet
         blanditiis, voluptatem officiis laudantium praesentium quo quam? Fuga provident placeat nostrum facere aliquam
         adipisci dolorum labore eius laboriosam tenetur pariatur possimus esse architecto, voluptates, vel, consequuntur
-        dolor a eum atque illum assumenda! Assumenda expedita magni in veritatis distinctio ratione nisi cum? Delectus,
-        ratione. Commodi voluptatum nemo provident alias asperiores, aliquid repudiandae doloremque impedit cupiditate
+        dolor a eum atque illum assumenda! Assumenda expedita magni in veritatis distinctio ratione nisi cum?
+        <li class="article-point"><span>Poznane technologie</span></li>
+        <div id="technologie-carousel">
+            <div class="slick-element">
+                <img class="icon" src="img/icons/javascript.svg"/>
+                <span>Javascript</span>
+            </div>
+            <div class="slick-element">
+                <img class="icon" src="img/icons/html5.svg"/>
+                <span>HTML 5</span>
+            </div>
+            <div class="slick-element">
+                <img class="icon" src="img/icons/css.svg"/>
+                <span>CSS</span>
+            </div>
+            <div class="slick-element">
+                <img class="icon" src="img/icons/php-iconfinder.svg"/>
+                <span>PHP</span>
+            </div>
+            <div class="slick-element">
+                <img class="icon" src="img/icons/cpp.svg"/>
+                <span>C++</span>
+            </div>
+        </div>
+        <li class="article-point"><span>Zainteresowania</span></li>
+        <ul>
+        <li class="zainteresowanie">Piłka nożna (liga hiszpańska)</li>
+        <li class="zainteresowanie">Geocaching</li>
+        <li class="zainteresowanie">Najnowsze technologie codziennego użytku</li>
+        <li class="zainteresowanie">Magic: the Gathering</li>
+        <li class="zainteresowanie">Gry komputerowe</li>
+        </ul>
+        <!--
+        Delectus, ratione. Commodi voluptatum nemo provident alias asperiores, aliquid repudiandae doloremque impedit cupiditate
         est sed rem quam ex esse sunt optio nostrum ut delectus hic qui praesentium deleniti. Harum, culpa quia modi
         consequatur, inventore corrupti sequi odit voluptates debitis delectus fugit ab tenetur voluptas incidunt esse.
         Deserunt dolore eligendi fugiat, veritatis aperiam repudiandae esse quas libero eum, quo numquam nihil officia
@@ -70,8 +108,9 @@ związane z kodowaniem w webowych językach programowania.">
         sed quaerat non consequuntur veniam distinctio alias odio praesentium sequi fuga unde possimus libero ad
         laboriosam molestias! Ab iste sint corporis quo possimus illum labore aliquid ratione! Cum eos mollitia aliquid
         sapiente debitis fugit odio corrupti dignissimos sequi ratione.
+-->
     </article>
-
+    </div>
 </body>
 
 </html>

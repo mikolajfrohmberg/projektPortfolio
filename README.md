@@ -8,5 +8,6 @@ Efekt końcowy można zobaczyć pod adresem: [Link do Portfolio](https://www.por
 - PHP 7
 - JavaScript (ES6)
 - JQuery 3.4.1
+- Slick 1.8.1
 ## O autorze
-Wykonał Mikołaj Frohmberg. Styczeń 2020
+Wykonał Mikołaj Frohmberg. Luty 2020
