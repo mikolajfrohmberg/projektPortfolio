@@ -6,7 +6,7 @@ body {
 
 @media only screen and (max-width: 360px) {
   nav {
-    background: #d83e06;
+    background: #265ea7;
     height: 4em;
     position: sticky;
     position: -webkit-sticky;
@@ -52,6 +52,7 @@ body {
     text-align: justify;
   }
   #languages-carousel, #technology-carousel {
+    margin: auto;
     width: 95%;
     height: 10em;
     text-align: center;
@@ -62,24 +63,51 @@ body {
     height: 40%;
     width: auto;
   }
+  #languages-carousel :focus, #technology-carousel :focus {
+    outline: none;
+  }
+  #intrests .zainteresowanie {
+    margin: 1em auto 1em auto;
+  }
   ul .zainteresowanie {
     font-weight: 300;
     font-size: 1em;
     text-align: left;
   }
   #footer {
-    height: 2.5em;
+    height: 9em;
     background-color: #28242d;
     text-align: center;
   }
+  #footer #contact {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+  #footer #contact p {
+    margin: 0;
+    padding: 0.2em;
+  }
+  #footer #email, #footer #repozytorium {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+  #footer #email img, #footer #repozytorium img {
+    clear: both;
+    height: 2.5em;
+    vertical-align: middle;
+    margin-right: 0.3em;
+  }
   #footer span {
     display: inline-block;
-    margin-top: 0.7em;
+    margin-top: 0.3em;
     color: white;
     font-family: "Montserrat", sans-serif;
   }
   .slick-prev:before {
-    background: url("./img/icons/back.svg") no-repeat;
+    background: url("./img/icons/back-arrow.svg") no-repeat;
   }
   .slick-next:before {
     background: url("./img/icons/right-arrow.svg") no-repeat;
@@ -143,6 +171,10 @@ body {
   font-weight: 600;
 }
 
+.zainteresowanie:hover .slide-interest span:hover {
+  cursor: context-menu;
+}
+
 #navbar {
   position: relative;
   height: 100%;
@@ -150,10 +182,10 @@ body {
 
 #navbar .change-lang {
   position: absolute;
-  top: 0.8em;
+  top: 1.05em;
   right: 1em;
-  height: 2.4em;
-  width: 4.9em;
+  height: 1.9em;
+  width: 3.857em;
   border: solid 1px #d6c5ed;
 }
 

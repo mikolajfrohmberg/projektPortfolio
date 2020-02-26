@@ -1,4 +1,4 @@
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -19,115 +19,120 @@
 
 <body>
     <nav>
-    <div id="navbar">
-        <a class="change-lang" id="lang-pl" href="../"></a>
-    </div>
+        <div id="navbar">
+            <a class="change-lang" id="lang-pl" href="../"></a>
+        </div>
     </nav>
 
     <div id="title-banner">
         <h1>PORTFOLIO - MIKOŁAJ FROHMBERG</h1>
     </div>
     <div id="main-article">
-    <article>
-        <li class="article-point"><span>About me</span></li>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi. Nostrum quod vel deleniti! Odio provident
-        dolores quibusdam quis, iste qui incidunt tempora voluptatem. Debitis vitae accusantium laborum praesentium. Vel
-        qui soluta quia iure eaque dolore aliquam est minima ducimus unde rerum aut nemo, doloremque cum. Vel ipsa cum
-        assumenda mollitia natus blanditiis delectus, nisi consequuntur praesentium a explicabo ducimus nihil inventore
-        id? Accusamus, ipsa nesciunt quisquam rem porro architecto, ea perspiciatis deleniti explicabo repellat
-        doloribus. Aut quidem quasi porro deleniti id saepe, facilis libero eaque aliquid veritatis. Velit sit quidem
-        quasi voluptatem at ratione suscipit dolore sapiente quaerat laudantium!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto delectus culpa pariatur tempora
-        adipisci consequatur odit suscipit asperiores id voluptas harum deleniti quibusdam odio accusantium eum a,
-        corrupti autem? Voluptate alias nulla facere ex, iusto nostrum mollitia sapiente accusamus? Sit hic expedita
-        debitis porro enim nostrum repellendus libero optio quia perferendis amet iste nihil, praesentium doloribus
-        minima aliquam dolorum illum, saepe deserunt vero? Reiciendis quisquam recusandae omnis tempore magni eveniet
-        blanditiis, voluptatem officiis laudantium praesentium quo quam? Fuga provident placeat nostrum facere aliquam
-        adipisci dolorum labore eius laboriosam tenetur pariatur possimus esse architecto, voluptates, vel, consequuntur
-        dolor a eum atque illum assumenda! Assumenda expedita magni in veritatis distinctio ratione nisi cum?
-        <li class="article-point"><span>Used languages</span></li>
-        <div id="languages-carousel">
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/javascript.svg"/>
-                <span>Javascript</span>
+        <article>
+            <li class="article-point"><span>About me</span></li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi. Nostrum quod vel deleniti! Odio provident
+            dolores quibusdam quis, iste qui incidunt tempora voluptatem. Debitis vitae accusantium laborum praesentium. Vel
+            qui soluta quia iure eaque dolore aliquam est minima ducimus unde rerum aut nemo, doloremque cum. Vel ipsa cum
+            assumenda mollitia natus blanditiis delectus, nisi consequuntur praesentium a explicabo ducimus nihil inventore
+            id? Accusamus, ipsa nesciunt quisquam rem porro architecto, ea perspiciatis deleniti explicabo repellat
+            doloribus. Aut quidem quasi porro deleniti id saepe, facilis libero eaque aliquid veritatis. Velit sit quidem
+            quasi voluptatem at ratione suscipit dolore sapiente quaerat laudantium!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto delectus culpa pariatur tempora
+            adipisci consequatur odit suscipit asperiores id voluptas harum deleniti quibusdam odio accusantium eum a,
+            corrupti autem? Voluptate alias nulla facere ex, iusto nostrum mollitia sapiente accusamus? Sit hic expedita
+            debitis porro enim nostrum repellendus libero optio quia perferendis amet iste nihil, praesentium doloribus
+            minima aliquam dolorum illum, saepe deserunt vero? Reiciendis quisquam recusandae omnis tempore magni eveniet
+            blanditiis, voluptatem officiis laudantium praesentium quo quam? Fuga provident placeat nostrum facere aliquam
+            adipisci dolorum labore eius laboriosam tenetur pariatur possimus esse architecto, voluptates, vel, consequuntur
+            dolor a eum atque illum assumenda! Assumenda expedita magni in veritatis distinctio ratione nisi cum?
+            <li class="article-point"><span>Used Languages</span></li>
+            <div id="languages-carousel">
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/javascript.svg"/>
+                    <span>Javascript</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/html5.svg"/>
+                    <span>HTML 5</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/css.svg"/>
+                    <span>CSS</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/php.svg"/>
+                    <span>PHP</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/cpp.svg"/>
+                    <span>C++</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/python.svg"/>
+                    <span>Python</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/c-sharp.svg"/>
+                    <span>C#</span>
+                </div>
             </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/html5.svg"/>
-                <span>HTML 5</span>
-            </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/css.svg"/>
-                <span>CSS</span>
-            </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/php.svg"/>
-                <span>PHP</span>
-            </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/cpp.svg"/>
-                <span>C++</span>
-            </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/python.svg"/>
-                <span>Python</span>
-            </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/c-sharp.svg"/>
-                <span>C#</span>
-            </div>
-        </div>
 
-        <li class="article-point"><span>Known technology</span></li>
-        <div id="technology-carousel">
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/jquery.svg"/>
-                <span>JQuery</span>
+            <li class="article-point"><span>Known technologies</span></li>
+            <div id="technology-carousel">
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/jquery.svg"/>
+                    <span>JQuery</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/sass.svg"/>
+                    <span>Sass</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/mysql.svg"/>
+                    <span>MySQL</span>
+                </div>
+                <div class="slick-element">
+                    <img class="icon" src="../img/icons/windowsforms.svg"/>
+                    <span>Windows Forms</span>
+                </div>  
             </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/sass.svg"/>
-                <span>Sass</span>
+            <li class="article-point"><span>Interests</span></li>
+            <div id="intrests">
+                <div class="zainteresowanie" id="new-tech">
+                    <img class="interest-img" src="../img/interests/cpu1.jpg" alt="new technologies picture"/>
+                    <div class="slide-interest"><span>Technologie w codzienności</span></div>
+                </div>
+                <div class="zainteresowanie" id="soccer">
+                    <img class="interest-img" src="../img/interests/soccer1.jpg" alt="soccer picture"/>
+                    <div class="slide-interest"><span>Football<br>(Spanish La Liga)</span></div>
+                </div>
+                <div class="zainteresowanie" id="geocaching">
+                    <img class="interest-img" src="../img/interests/geocache1.jpg" alt="geocaching picture"/>
+                    <div class="slide-interest"><span>Geocaching</span></div>
+                </div>
+                <div class="zainteresowanie" id="magic-tg">
+                    <img class="interest-img" src="../img/interests/mtg1.jpg" alt="magic the gathering picture"/>
+                    <div class="slide-interest"><span>Magic: the Gathering</span></div>
+                </div>
+                <div class="zainteresowanie" id="video-games">
+                    <img class="interest-img" src="../img/interests/videogame1.jpg" alt="video games picture"/>
+                    <div class="slide-interest"><span>Video Games</span></div>
+                </div>
             </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/mysql.svg"/>
-                <span>MySQL</span>
-            </div>
-            <div class="slick-element">
-                <img class="icon" src="../img/icons/windowsforms.svg"/>
-                <span>Windows Forms</span>
-            </div>
-        </div>
-        <li class="article-point"><span>Interests</span></li>
-        
-        <div class="zainteresowanie" id="new-tech">
-            <img class="interest-img" src="../img/interests/cpu1.jpg" alt="new technologies picture"/>
-            <div class="slide-interest"><span>Technologies in everyday life</span></div>
-        </div>
-        <div class="zainteresowanie" id="soccer">
-            <img class="interest-img" src="../img/interests/soccer1.jpg" alt="soccer picture"/>
-            <div class="slide-interest"><span>Football<br>(Spanish La Liga)</span></div>
-        </div>
-        <div class="zainteresowanie" id="geocaching">
-            <img class="interest-img" src="../img/interests/geocache1.jpg" alt="geocaching picture"/>
-            <div class="slide-interest"><span>Geocaching</span></div>
-        </div>
-        <div class="zainteresowanie" id="magic-tg">
-            <img class="interest-img" src="../img/interests/mtg1.jpg" alt="magic the gathering picture"/>
-            <div class="slide-interest"><span>Magic: the Gathering</span></div>
-        </div>
-        <div class="zainteresowanie" id="video-games">
-            <img class="interest-img" src="../img/interests/videogame1.jpg" alt="video games picture"/>
-            <div class="slide-interest"><span>Video Games</span></div>
-        </div>
-        
-    </article>
+        </article>
     </div>
+
     <footer>
-        <div id="footer"><span>Mikołaj Frohmberg 2020</span>
+        <div id="footer">
+            <div id="contact">
+                <p><a id="email" href="mailto:mikolaj.frohmberg@gmail.com"><img src="../img/icons/mail.svg"/>mikolaj.frohmberg@gmail.com</a></p>
+                <p><a id="repozytorium" href="https://github.com/mikolajfrohmberg"><img src="../img/icons/github.svg"/>github.com/mikolajfrohmberg</a></p>
+            </div>
+            <span>Mikołaj Frohmberg 2020</span>
         </div>
     </footer>
 
 </body>
-
 </html>
 
 <?php

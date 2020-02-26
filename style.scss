@@ -1,8 +1,11 @@
-$kolor-nawigacji: rgb(216, 62, 6);
-$kolor-stopki: #28242d;
-$domyslna-czcionka: 'Montserrat', sans-serif;
-$podkreslenie-punktu: #999999;
-$obwod-karuzeli: 1px solid #4286ca;
+$nav-color: #265ea7;
+$footer-color: #28242d;
+$footer-height: 9em;
+$deafult-font: 'Montserrat', sans-serif;
+$underline-color: #999999;
+$carousel-border: 1px solid #4286ca;
+$navbar-height: 4em;
+$flag-height: 1.9em;
 
 body
 {
@@ -14,8 +17,8 @@ body
 {
     nav
     {
-        background: $kolor-nawigacji;
-        height: 4em;
+        background: $nav-color;
+        height: $navbar-height;
         position: sticky;
         position: -webkit-sticky;
         top: 0;
@@ -48,7 +51,7 @@ body
             color: white;
             letter-spacing: 2px;
             text-align: center;
-            font-family: $domyslna-czcionka;
+            font-family: $deafult-font;
             font-size: 1.3em;
             font-weight: 600;
             position: absolute;
@@ -62,7 +65,7 @@ body
         padding: 0.5em;
         margin-left: 0.5em;
         margin-right: 0.5em;
-        font-family: $domyslna-czcionka;
+        font-family: $deafult-font;
         font-size: 1em;
         font-weight: 400;
         text-align: justify;
@@ -70,16 +73,22 @@ body
 
     %carousel-styles
     {
+        margin: auto;
         width: 95%;
         height: 10em;
         text-align: center;
-        border: $obwod-karuzeli;
+        border: $carousel-border;
 
         .slick-element .icon
         {
             margin: 8% auto 6% auto;
             height: 40%;
             width: auto;
+        }
+
+        :focus
+        {
+            outline: none;
         }
     }
 
@@ -93,6 +102,11 @@ body
         @extend %carousel-styles;
     }
 
+    #intrests .zainteresowanie
+    {
+        margin: 1em auto 1em auto;
+    }
+
     ul .zainteresowanie
     {
         font-weight: 300;
@@ -102,23 +116,52 @@ body
 
     #footer
     {
-        height: 2.5em;
-        background-color: $kolor-stopki;
+        height: $footer-height;
+        background-color: $footer-color;
         text-align: center;
+
+        #contact
+        {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+
+            p
+            {
+                margin: 0;
+                padding: 0.2em;
+            }
+        }
+
+        #email, #repozytorium
+        {
+            color: white;
+            font-family: $deafult-font;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-decoration: none;
+
+            img
+            {
+                clear: both;
+                height: 2.5em;
+                vertical-align: middle;
+                margin-right: 0.3em;
+            }
+        }
 
         span
         {
             display: inline-block;
-            margin-top: 0.7em;
+            margin-top: 0.3em;
             color: white;
-            font-family: $domyslna-czcionka;
+            font-family: $deafult-font;
         }
         
     }
 
     .slick-prev:before
     {
-        background: url('./img/icons/back.svg') no-repeat;
+        background: url('./img/icons/back-arrow.svg') no-repeat;
     }
       
     .slick-next:before
@@ -182,7 +225,7 @@ body
     {
         margin-left: -0.5em;
         text-decoration-line: underline;
-        text-decoration-color: $podkreslenie-punktu;
+        text-decoration-color: $underline-color;
         text-decoration-style: dashed;
     }
 }
@@ -195,6 +238,10 @@ body
         opacity: 1;
         font-weight: 600;
     }
+    span:hover
+    {
+        cursor: context-menu;
+    }
 }
 
 #navbar
@@ -205,10 +252,10 @@ body
     .change-lang
     {
         position: absolute;
-        top: 0.8em;
+        top: ($navbar-height - $flag-height)/2;
         right: 1em;
-        height: 2.4em;
-        width: 4.9em;
+        height: $flag-height;
+        width: ($flag-height * 2.03);
         border: solid 1px #d6c5ed;
     }
 
