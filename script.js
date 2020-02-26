@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    $("#technologie-carousel").slick();
+    $("#languages-carousel").slick({
+        arrows: true
+    });
+    $("#technology-carousel").slick();
 });
 
 

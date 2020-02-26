@@ -67,11 +67,13 @@
 .slick-next:before
 {
     font-family: 'slick';
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1;
 
     opacity: .75;
-    color: white;
+
+    /* Zmieniono na potrzeby konfiguracji slidera */
+    color: transparent;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,7 +81,8 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 0px;
+    z-index: 1;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +100,8 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 10px;
+    z-index: 1;
 }
 [dir='rtl'] .slick-next
 {
