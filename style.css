@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 280px) {
   nav {
     background: #265ea7;
     height: 4em;
@@ -40,6 +40,8 @@ body {
     font-weight: 600;
     position: absolute;
     z-index: 1;
+    left: 0;
+    right: 0;
     bottom: 0;
   }
   #main-article {
@@ -51,6 +53,9 @@ body {
     font-weight: 400;
     text-align: justify;
   }
+  #main-article #zdjecie {
+    text-align: center;
+  }
   #languages-carousel, #technology-carousel {
     margin: auto;
     width: 95%;
@@ -59,15 +64,31 @@ body {
     border: 1px solid #4286ca;
   }
   #languages-carousel .slick-element .icon, #technology-carousel .slick-element .icon {
-    margin: 8% auto 6% auto;
+    margin: 1.2em auto 1.5em auto;
     height: 40%;
     width: auto;
   }
   #languages-carousel :focus, #technology-carousel :focus {
     outline: none;
   }
+  #intrests {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #intrests .break {
+    flex-basis: 100%;
+    height: 0;
+  }
   #intrests .zainteresowanie {
-    margin: 1em auto 1em auto;
+    margin: 1em auto 0.5em auto;
+  }
+  #intrests .zainteresowanie:first-child {
+    margin-top: 0;
+  }
+  #intrests .zainteresowanie:last-child {
+    margin-bottom: 1em;
   }
   ul .zainteresowanie {
     font-weight: 300;
@@ -113,7 +134,7 @@ body {
     background: url("./img/icons/right-arrow.svg") no-repeat;
   }
   .zainteresowanie {
-    height: 10em;
+    height: 12em;
     width: 95%;
     margin-bottom: 1em;
     position: relative;
@@ -145,6 +166,93 @@ body {
   }
 }
 
+@media only screen and (min-width: 361px) and (max-width: 410px) {
+  #interests {
+    text-align: center;
+  }
+  .zainteresowanie {
+    width: 95%;
+    height: auto;
+  }
+  .interest-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 410px) {
+  .zainteresowanie {
+    width: 17.92em;
+    height: 11.2em;
+  }
+}
+
+@media only screen and (min-width: 530px) {
+  #title-banner h1 {
+    left: 0;
+    right: 0;
+    text-align: left;
+    margin-left: 1.8em;
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 580px) {
+  #main-article {
+    padding: 0.5em;
+    margin-left: 1em;
+    margin-right: 0.5em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: justify;
+  }
+  #zdjecie {
+    float: left;
+    width: auto;
+    margin-right: auto;
+    margin-left: 0;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
+    padding-left: 1.2em;
+  }
+  #zdjecie img {
+    transform: scale(1.1);
+    margin-top: 0.5em;
+    margin-bottom: 0.6em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #footer {
+    height: 6em;
+  }
+  #footer #email-container, #footer #git-container {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #intrests #new-tech, #intrests #soccer {
+    margin-top: 0.5em;
+  }
+  #intrests #break1 {
+    flex-basis: 0%;
+  }
+  #intrests #break4 {
+    flex-basis: 0%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #intrests #geocaching {
+    margin-top: 0.5em;
+  }
+  #intrests #break2 {
+    flex-basis: 0%;
+  }
+}
+
 /* Niezależne od szerokości */
 .article-point {
   list-style-type: square;
@@ -160,6 +268,13 @@ body {
   text-decoration-line: underline;
   text-decoration-color: #999999;
   text-decoration-style: dashed;
+}
+
+#opis {
+  font-size: 0.9em;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-weight: 300;
 }
 
 .zainteresowanie:hover .slide-interest {
@@ -180,12 +295,28 @@ body {
   height: 100%;
 }
 
+#navbar #scroll-top {
+  position: absolute;
+  left: 1em;
+  top: 0.8em;
+  background: url("img/icons/scroll-up.svg") no-repeat;
+  background-size: contain;
+  height: 2.4em;
+  width: 2.4em;
+  display: none;
+}
+
+#navbar #scroll-top :focus {
+  outline: none;
+  text-decoration: none;
+}
+
 #navbar .change-lang {
   position: absolute;
   top: 1.05em;
   right: 1em;
   height: 1.9em;
-  width: 3.857em;
+  width: 3.705em;
   border: solid 1px #d6c5ed;
 }
 

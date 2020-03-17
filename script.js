@@ -1,8 +1,56 @@
 $(document).ready(function(){
+
+    let myAge = moment().diff('1998-07-19', 'years');
+
+    if($("#wiek").length > 0) {
+        if(myAge%10 == 2 || myAge%10 == 3 || myAge%10 == 4 && myAge > 21)
+            $("#wiek").html(myAge+"&nbsplata");
+        else
+            $("#wiek").html(myAge+"&nbsplat");
+    }
+    else {
+            $("#wiek-en").html(myAge+"&nbspyears ago");
+    }
+    
     $("#languages-carousel").slick({
-        arrows: true
+        slidesToShow: 5,
+        responsive:[
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
-    $("#technology-carousel").slick();
+    $("#technology-carousel").slick({
+        slidesToShow: 5,
+        responsive:[
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 680,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    $("#scroll-top").click(function(){
+        $("html, body").animate({scrollTop: 0}, 1000);
+        return false;
+    });
 });
 
 
@@ -15,5 +63,10 @@ $(window).on("scroll", function(){
     else
         $("#title-banner h1").css("opacity", calculatedOpacity);
     
-    $("#title-banner .banner-icons").css("top",100+yOffset*1.8);
+        var mainArticleOffset = $("#main-article").offset().top;
+
+    if(yOffset > mainArticleOffset)
+        $("#scroll-top").fadeIn();
+    else
+        $("#scroll-top").fadeOut();
 });

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
     <script src="libraries/jquery-3.4.1.min.js"></script>
+    <script src="libraries/moment-2.24.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="libraries/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="libraries/slick-1.8.1/slick/slick-theme.css"/>
     <script type="text/javascript" src="libraries/slick-1.8.1/slick/slick.min.js"></script>
@@ -20,6 +21,7 @@
 <body>
     <nav>
         <div id="navbar">
+            <a id="scroll-top" href="#"></a>
             <a class="change-lang" id="lang-en" href="./en"></a>
         </div>
     </nav>
@@ -30,21 +32,20 @@
     <div id="main-article">
         <article>
             <li class="article-point"><span>O mnie</span></li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, animi. Nostrum quod vel deleniti! Odio provident
-            dolores quibusdam quis, iste qui incidunt tempora voluptatem. Debitis vitae accusantium laborum praesentium. Vel
-            qui soluta quia iure eaque dolore aliquam est minima ducimus unde rerum aut nemo, doloremque cum. Vel ipsa cum
-            assumenda mollitia natus blanditiis delectus, nisi consequuntur praesentium a explicabo ducimus nihil inventore
-            id? Accusamus, ipsa nesciunt quisquam rem porro architecto, ea perspiciatis deleniti explicabo repellat
-            doloribus. Aut quidem quasi porro deleniti id saepe, facilis libero eaque aliquid veritatis. Velit sit quidem
-            quasi voluptatem at ratione suscipit dolore sapiente quaerat laudantium!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto delectus culpa pariatur tempora
-            adipisci consequatur odit suscipit asperiores id voluptas harum deleniti quibusdam odio accusantium eum a,
-            corrupti autem? Voluptate alias nulla facere ex, iusto nostrum mollitia sapiente accusamus? Sit hic expedita
-            debitis porro enim nostrum repellendus libero optio quia perferendis amet iste nihil, praesentium doloribus
-            minima aliquam dolorum illum, saepe deserunt vero? Reiciendis quisquam recusandae omnis tempore magni eveniet
-            blanditiis, voluptatem officiis laudantium praesentium quo quam? Fuga provident placeat nostrum facere aliquam
-            adipisci dolorum labore eius laboriosam tenetur pariatur possimus esse architecto, voluptates, vel, consequuntur
-            dolor a eum atque illum assumenda! Assumenda expedita magni in veritatis distinctio ratione nisi cum?
+            <figure id="zdjecie">
+                <img src="img/myphoto.jpg" alt="Moje zdjęcie">
+            </figure>
+            <div id="opis">
+            <p><strong>Cześć!</strong></p>
+            <p>Mam na imię Mikołaj i urodziłem się <span id="wiek"></span> temu w Poznaniu.</p>
+            <p>Pierwszą styczność z programowaniem miałem w wieku 14 lat, gdy uczyłem się języka C++ na&nbsppodstawie tutoriali dostępnych na YouTube.
+            <p>Kolejno wiedzę z zakresu programowania oraz działania baz danych podbudowałem w&nbspliceum (w&nbspklasie o&nbspprofilu częściowo informatycznym) oraz na studiach.</p>
+            <p>Od ponad 2 lat moim głównym obszarem zainteresowania są języki programowania webowego.</p>
+            <p>W międzyczasie prowadziłem korepetycje z&nbspzakresu programowania dla uczniów szkół podstawowych i&nbspśrednich oraz wziąłem udział w&nbspprogramie Letnich Praktyk Eurocash w&nbspdziale Analiz i&nbspProgramowania.</p>
+            <p>Obecnie jestem studentem III roku Informatyki na Politechnice Poznańskiej.</p>
+            <p>Program studiów nie obejmuje pełnego zapoznania się z wymaganymi w obszarze webowym zagadnieniami, więc uczę się na podstawie materiałów dostępnych w sieci oraz stosując metodę prób i błędów :)</p>
+            <p>Moim ulubionym językiem jest JavaScript, gdyż dostrzegam drzemiący w nim wielki potencjał oraz uniwersalność.</p>
+            </div>
             <li class="article-point"><span>Wykorzystywane języki</span></li>
             <div id="languages-carousel">
                 <div class="slick-element">
@@ -84,6 +85,10 @@
                     <span>JQuery</span>
                 </div>
                 <div class="slick-element">
+                    <img class="icon" src="img/icons/bootstrap.svg"/>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="slick-element">
                     <img class="icon" src="img/icons/sass.svg"/>
                     <span>Sass</span>
                 </div>
@@ -102,18 +107,22 @@
                     <img class="interest-img" src="img/interests/cpu1.jpg" alt="new technologies picture"/>
                     <div class="slide-interest"><span>Technologie w codzienności</span></div>
                 </div>
+                <div id="break1" class="break"></div>
                 <div class="zainteresowanie" id="soccer">
                     <img class="interest-img" src="img/interests/soccer1.jpg" alt="soccer picture"/>
                     <div class="slide-interest"><span>Piłka nożna<br>(liga hiszpańska)</span></div>
                 </div>
+                <div id="break2" class="break"></div>
                 <div class="zainteresowanie" id="geocaching">
                     <img class="interest-img" src="img/interests/geocache1.jpg" alt="geocaching picture"/>
                     <div class="slide-interest"><span>Geocaching</span></div>
                 </div>
+                <div id="break3" class="break"></div>
                 <div class="zainteresowanie" id="magic-tg">
                     <img class="interest-img" src="img/interests/mtg1.jpg" alt="magic the gathering picture"/>
                     <div class="slide-interest"><span>Magic: the Gathering</span></div>
                 </div>
+                <div id="break4" class="break"></div>
                 <div class="zainteresowanie" id="video-games">
                     <img class="interest-img" src="img/interests/videogame1.jpg" alt="video games picture"/>
                     <div class="slide-interest"><span>Gry wideo</span></div>
@@ -125,8 +134,8 @@
     <footer>
         <div id="footer">
             <div id="contact">
-                <p><a id="email" href="mailto:mikolaj.frohmberg@gmail.com"><img src="img/icons/mail.svg"/>mikolaj.frohmberg@gmail.com</a></p>
-                <p><a id="repozytorium" href="https://github.com/mikolajfrohmberg"><img src="img/icons/github.svg"/>github.com/mikolajfrohmberg</a></p>
+                <div id="email-container"><p><a id="email" href="mailto:mikolaj.frohmberg@gmail.com"><img src="img/icons/mail.svg"/>mikolaj.frohmberg@gmail.com</a></p></div>
+                <div id="git-container"><p><a id="repozytorium" target="blank" href="https://github.com/mikolajfrohmberg"><img src="img/icons/github.svg"/>github.com/mikolajfrohmberg</a></p></div>
             </div>
             <span>Mikołaj Frohmberg 2020r.</span>
         </div>
