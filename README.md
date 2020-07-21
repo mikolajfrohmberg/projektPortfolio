@@ -1,7 +1,7 @@
 # Projekt Portfolio
 ## O projekcie
 Poniższe repozytorium zawiera kod źródłowy wykonanego przeze mnie portfolio.
-Obecnie nie jest ono jeszcze dostępne pod adresem www.
+Obecnie nie jest ono jeszcze dostępne pod adresem "www".
 ## Wykorzystywane technologie
 - HTML5
 - SASS (wersja SCSS)
