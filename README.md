@@ -1,7 +1,7 @@
 # Projekt Portfolio
 ## O projekcie
 Poniższe repozytorium zawiera kod źródłowy wykonanego przeze mnie portfolio.
-Efekt końcowy będzie można zobaczyć pod adresem: [Link do Portfolio](https://www.portfolioxyz.pl)
+Obecnie nie jest ono jeszcze dostępne pod adresem www.
 ## Wykorzystywane technologie
 - HTML5
 - SASS (wersja SCSS)
