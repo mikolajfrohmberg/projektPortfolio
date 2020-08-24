@@ -53,8 +53,13 @@ body {
     font-weight: 400;
     text-align: justify;
   }
+  #main-article #opis {
+    margin-top: 1em;
+  }
   #main-article #zdjecie {
     text-align: center;
+    padding-top: 0;
+    margin-top: 0;
   }
   #languages-carousel, #technology-carousel {
     margin: auto;
@@ -187,6 +192,15 @@ body {
   }
 }
 
+@media only screen and (min-width: 490px) {
+  #zdjecie {
+    max-width: 400px;
+  }
+  #zdjecie img {
+    height: auto;
+  }
+}
+
 @media only screen and (min-width: 530px) {
   #title-banner h1 {
     left: 0;
@@ -209,17 +223,6 @@ body {
   }
   #zdjecie {
     float: left;
-    width: auto;
-    margin-right: auto;
-    margin-left: 0;
-    padding-bottom: 0.5em;
-    padding-right: 2em;
-    padding-left: 1.2em;
-  }
-  #zdjecie img {
-    transform: scale(1.1);
-    margin-top: 0.5em;
-    margin-bottom: 0.6em;
   }
 }
 
@@ -261,6 +264,7 @@ body {
   margin-bottom: 1em;
   margin-top: 1em;
   text-align: left;
+  clear: both;
 }
 
 .article-point span {
@@ -268,6 +272,10 @@ body {
   text-decoration-line: underline;
   text-decoration-color: #999999;
   text-decoration-style: dashed;
+}
+
+#zdjecie img {
+  max-width: 80%;
 }
 
 #opis {

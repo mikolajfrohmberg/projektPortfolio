@@ -73,11 +73,17 @@ body
         font-weight: 400;
         text-align: justify;
 
+        #opis
+        {
+            margin-top: 1em;
+        }
+
         #zdjecie
         {
             text-align: center;
+            padding-top: 0;
+            margin-top: 0;
         }
-
     }
 
     %carousel-styles-sm
@@ -273,6 +279,19 @@ body
     }
 }
 
+@media only screen and (min-width: 490px)
+{
+    #zdjecie
+    {
+        max-width: 400px;
+        img 
+        {
+            height: auto;
+            
+        }
+    }
+}
+
 @media only screen and (min-width: 530px)
 {
     #title-banner
@@ -286,6 +305,8 @@ body
             font-size: 1.4em;
         }
     }
+
+    
 }
 
 @media only screen and (min-width: 580px)
@@ -304,19 +325,7 @@ body
     #zdjecie
     {
         float: left;
-        width: auto;
-        margin-right: auto;
-        margin-left: 0;
-        padding-bottom: 0.5em;
-        padding-right: 2em;
-        padding-left: 1.2em;
 
-        img
-        {
-            transform: scale(1.1);
-            margin-top: 0.5em;
-            margin-bottom: 0.6em;
-        }
     }
 }
 
@@ -380,6 +389,7 @@ body
     margin-bottom: 1em;
     margin-top: 1em;
     text-align: left;
+    clear: both;
 
     span
     {
@@ -388,6 +398,11 @@ body
         text-decoration-color: $underline-color;
         text-decoration-style: dashed;
     }
+}
+
+#zdjecie img
+{
+    max-width: 80%;
 }
 
 #opis
