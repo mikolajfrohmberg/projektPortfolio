@@ -1,7 +1,7 @@
 # Projekt Portfolio
 ## O projekcie
 Omawiane repozytorium zawiera kod źródłowy wykonanego portfolio.
-Efekt końcowy można zobaczyć pod adresem: [Link do Portfolio](https://www.portfolioxyz.pl)
+Efekt końcowy można zobaczyć pod adresem: [Link do Portfolio](https://mikolajfrohmberg.github.io/projektPortfolio/)
 ## Wykorzystywane technologie
 - HTML5
 - CCS3
